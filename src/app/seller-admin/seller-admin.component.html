@@ -1,0 +1,20 @@
+<div class="flex justify-center">
+    <div class="w-4/12 m-24">
+        <div class="flex justify-center font-bold text-3xl">Seller Sign Up </div>
+        <form class="flex-col mt-6"  #sellerSignIn="ngForm" (ngSubmit)="signIn(sellerSignIn.value)">
+                <input class="w-full h-10 border border-orange-500 rounded-md m-2 mt-3 p-1" 
+                ngModel type="text" name="name" placeholder="Enter Name" 
+                />
+                <input class="w-full h-10 border border-orange-500 rounded-md m-2 mt-3 p-1" 
+                ngModel type="text" name="email" placeholder="Enter Email" 
+                />
+                <input class="w-full h-10 border border-orange-500 rounded-md m-2 mt-3 p-1" 
+                ngModel type="text" name="password" placeholder="Enter Password" 
+                />
+                <button class="w-full bg-pink-600 h-10 m-2 mt-2 border-orange-500 border rounded-md text-white"  
+                type="button" (click)="signIn(sellerSignIn.value)" >
+                Login
+            </button>
+        </form>
+    </div>
+</div>
