@@ -5,6 +5,35 @@
       "email": "abhinav@gmail.com",
       "password": "Abhinav@123",
       "id": 1
+    },
+    {
+      "name": "Buddy",
+      "email": "buddy@gmail.com",
+      "password": "Buddy@123",
+      "id": 2
+    },
+    {
+      "name": "Baba",
+      "email": "baba@gmail.com",
+      "password": "Baba@123",
+      "id": 3
+    },
+    {
+      "name": "Hunter",
+      "email": "hunter@gmail.com",
+      "password": "Hunter@123",
+      "id": 4
+    },
+    {
+      "name": "Binod",
+      "email": "binod@gmail.com",
+      "password": "Binod@123",
+      "id": 5
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 6
     }
   ]
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { SignUp } from '../data-type';
+import { SellerService } from '../services/seller.service';
 
 @Component({
   selector: 'app-seller-admin',
@@ -7,13 +10,29 @@ import { Component, OnInit } from '@angular/core';
 })
 // export class SellerAdminComponent {
   export class SellerAdminComponent implements OnInit {
-  constructor() {}
+  constructor(private seller:SellerService, private router:Router) {}
+  showLogin=false
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.seller.reloadSeller()
+  }
 
-  signIn(data:object):void {
+  signUp(data:SignUp):void {
     console.log(data)
-    console.log("Function is called")
+    this.seller.sellerSignUp(data)
+  }
+
+  signIn(data:SignUp):void {
+    console.log(data)
+    // this.seller.sellerSignUp(data)
+  }
+
+  openLogin() {
+    this.showLogin = true
+  }
+
+  openSignUp() {
+    this.showLogin=false
   }
 
 }
