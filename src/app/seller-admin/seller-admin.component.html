@@ -22,6 +22,7 @@
     <!-- <------ Login Form -------->
     <div *ngIf="showLogin" class="w-4/12 m-24">
         <div class="flex justify-center font-bold text-3xl">Seller Login </div>
+        <p class="text-red-800 justify-center flex">{{authError}}</p>
         <form class="flex-col mt-6"  #sellerSignIn="ngForm" >
                 <input class="w-full h-10 border border-orange-500 rounded-md m-2 mt-3 p-1" 
                 ngModel type="text" name="email" placeholder="Enter Email" 
